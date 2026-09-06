@@ -22,9 +22,9 @@ const PORT = process.env.PORT || 3000;
 // backend/server.js se ek level bahar jaakar
 // frontend folder ko target karega
 
-const frontendPath = path.resolve(__dirname, "../frontend");
+// const frontendPath = path.resolve(__dirname, "../frontend");
 
-console.log("Frontend Path:", frontendPath);
+// console.log("Frontend Path:", frontendPath);
 
 
 // =====================================================
@@ -52,128 +52,128 @@ app.use(
 // Fonts
 // etc. serve honge
 
-app.use(express.static(frontendPath));
+// app.use(express.static(frontendPath));
 
 
 // =====================================================
 // HOME PAGE
 // =====================================================
 
-app.get("/", (req, res) => {
+// app.get("/", (req, res) => {
 
-    res.sendFile(
-        path.join(frontendPath, "index.html")
-    );
+//     res.sendFile(
+//         path.join(frontendPath, "index.html")
+//     );
 
-});
-
-
-// =====================================================
-// CONTACT PAGE
-// URL: /contact
-// =====================================================
-
-app.get("/contact", (req, res) => {
-
-    res.sendFile(
-        path.join(frontendPath, "contact.html")
-    );
-
-});
+// });
 
 
-// ABOUT PAGE
-app.get("/about", (req, res) => {
-    res.sendFile(
-        path.join(frontendPath, "about.html")
-    );
-});
+// // =====================================================
+// // CONTACT PAGE
+// // URL: /contact
+// // =====================================================
 
-// Car-Denting
-app.get("/Car-Denting", (req, res) => {
-    res.sendFile(
-        path.join(frontendPath, "Car-Denting.html")
-    );
-});
+// app.get("/contact", (req, res) => {
 
-// Car-android-Screens
-app.get("/Car-android-Screens", (req, res) => {
-    res.sendFile(
-        path.join(frontendPath, "Car-android-Screens.html")
-    );
-});
+//     res.sendFile(
+//         path.join(frontendPath, "contact.html")
+//     );
 
-// Car-Body-Kits
-app.get("/Car-Body-Kits", (req, res) => {
-    res.sendFile(
-        path.join(frontendPath, "Car-Body-Kits.html")
-    );
-});
+// });
 
-// Car-Interior
-app.get("/Car-Interior", (req, res) => {
-    res.sendFile(
-        path.join(frontendPath, "Car-Interior.html")
-    );
-});
 
-// Car-Mechanical-Services
-app.get("/Car-Mechanical-Services", (req, res) => {
-    res.sendFile(
-        path.join(frontendPath, "Car-Mechanical-Services.html")
-    );
-});
+// // ABOUT PAGE
+// app.get("/about", (req, res) => {
+//     res.sendFile(
+//         path.join(frontendPath, "about.html")
+//     );
+// });
 
-// Car-Polishing
-app.get("/Car-Polishing", (req, res) => {
-    res.sendFile(
-        path.join(frontendPath, "Car-Polishing.html")
-    );
-});
+// // Car-Denting
+// app.get("/Car-Denting", (req, res) => {
+//     res.sendFile(
+//         path.join(frontendPath, "Car-Denting.html")
+//     );
+// });
 
-// Car-Speakers
-app.get("/Car-Speakers", (req, res) => {
-    res.sendFile(
-        path.join(frontendPath, "Car-Speakers.html")
-    );
-});
+// // Car-android-Screens
+// app.get("/Car-android-Screens", (req, res) => {
+//     res.sendFile(
+//         path.join(frontendPath, "Car-android-Screens.html")
+//     );
+// });
 
-// Car-Upholstery
-app.get("/Car-Upholstery", (req, res) => {
-    res.sendFile(
-        path.join(frontendPath, "Car-Upholstery.html")
-    );
-});
+// // Car-Body-Kits
+// app.get("/Car-Body-Kits", (req, res) => {
+//     res.sendFile(
+//         path.join(frontendPath, "Car-Body-Kits.html")
+//     );
+// });
 
-// Car-Window-Tinting
-app.get("/Car-Window-Tinting", (req, res) => {
-    res.sendFile(
-        path.join(frontendPath, "Car-Window-Tinting.html")
-    );
-});
+// // Car-Interior
+// app.get("/Car-Interior", (req, res) => {
+//     res.sendFile(
+//         path.join(frontendPath, "Car-Interior.html")
+//     );
+// });
 
-// Car-Wrapping
-app.get("/Car-Wrapping", (req, res) => {
-    res.sendFile(
-        path.join(frontendPath, "Car-Wrapping.html")
-    );
-});
+// // Car-Mechanical-Services
+// app.get("/Car-Mechanical-Services", (req, res) => {
+//     res.sendFile(
+//         path.join(frontendPath, "Car-Mechanical-Services.html")
+//     );
+// });
 
-// gallery
-app.get("/gallery", (req, res) => {
-    res.sendFile(
-        path.join(frontendPath, "gallery.html")
-    );
-});
+// // Car-Polishing
+// app.get("/Car-Polishing", (req, res) => {
+//     res.sendFile(
+//         path.join(frontendPath, "Car-Polishing.html")
+//     );
+// });
 
-// SERVICES PAGE
-app.get("/our-product", (req, res) => {
+// // Car-Speakers
+// app.get("/Car-Speakers", (req, res) => {
+//     res.sendFile(
+//         path.join(frontendPath, "Car-Speakers.html")
+//     );
+// });
 
-    res.sendFile(
-        path.join(frontendPath, "our-product.html")
-    );
+// // Car-Upholstery
+// app.get("/Car-Upholstery", (req, res) => {
+//     res.sendFile(
+//         path.join(frontendPath, "Car-Upholstery.html")
+//     );
+// });
 
-});
+// // Car-Window-Tinting
+// app.get("/Car-Window-Tinting", (req, res) => {
+//     res.sendFile(
+//         path.join(frontendPath, "Car-Window-Tinting.html")
+//     );
+// });
+
+// // Car-Wrapping
+// app.get("/Car-Wrapping", (req, res) => {
+//     res.sendFile(
+//         path.join(frontendPath, "Car-Wrapping.html")
+//     );
+// });
+
+// // gallery
+// app.get("/gallery", (req, res) => {
+//     res.sendFile(
+//         path.join(frontendPath, "gallery.html")
+//     );
+// });
+
+// // SERVICES PAGE
+// app.get("/our-product", (req, res) => {
+
+//     res.sendFile(
+//         path.join(frontendPath, "our-product.html")
+//     );
+
+// });
 
 
 // =====================================================
